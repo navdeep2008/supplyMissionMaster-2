@@ -59,13 +59,13 @@ function keyPressed() {
 Matter.Body.setStatic(packageBody,false);
 }
 
-if (keyCode === Right_arrow) {
+if (keyCode === RIGHT_ARROW) {
 	helicopterSprite.x = helicopterSprite.x+2;
 	var translation = {x:20,y:0}
 	Matter.Body.translate(packageBody, translation)
 }
 
-if (keyCode === Left_arrow) {
+if (keyCode === LEFT_ARROW) {
 	helicopterSprite.x = helicopterSprite.x-2;
 	var translation = {x:-20,y:0}
 	Matter.Body.translate(packageBody, translation)
